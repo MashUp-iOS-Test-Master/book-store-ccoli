@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0E9F142906CBA100F28050 /* RegisterBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */; };
 		CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */; };
 		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
 		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBookViewController.swift; sourceTree = "<group>"; };
 		CBEFFC492906BDCD00943927 /* book-store-ccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store-ccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */,
 				CBEFFC5A2906BDD000943927 /* Info.plist */,
 				CBEFFC7C2906C25800943927 /* BookListViewController.swift */,
+				CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */,
 			);
 			path = "book-store-ccoli";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */,
+				CB0E9F142906CBA100F28050 /* RegisterBookViewController.swift in Sources */,
 				CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */,
 				CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */,
 				CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */,
