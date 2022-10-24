@@ -144,6 +144,7 @@ final class RegisterBookViewController: UIViewController {
         }
         
         categorySegmentedControl.addTarget(self, action: #selector(categorySegmentedControlDidChange(_:)), for: .valueChanged)
+        registerBookButton.addTarget(self, action: #selector(registerButtonDidTap), for: .touchUpInside)
         
         let backgroundTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundDidTap))
         view.addGestureRecognizer(backgroundTapGestureRecognizer)
@@ -156,6 +157,11 @@ final class RegisterBookViewController: UIViewController {
     
     @objc func categorySegmentedControlDidChange(_ sender: UISegmentedControl) {
         
+    }
+    
+    @objc func registerButtonDidTap() {
+        // TODO: 저장 로직 구현
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func backgroundDidTap() {
