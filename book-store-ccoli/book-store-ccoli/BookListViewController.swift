@@ -12,7 +12,7 @@ final class BookListViewController: UIViewController {
     
     let registerBookButton: UIButton = {
         let button = UIButton()
-        button.setTitle("가격 합계", for: .normal)
+        button.setTitle("register", for: .normal)
         button.layer.cornerRadius = 8
         button.backgroundColor = .ccoliGreen
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
@@ -61,6 +61,6 @@ final class BookListViewController: UIViewController {
     }
     
     @objc func registerBookButtonDidTap() {
-
+        navigationController?.pushViewController(RegisterBookViewController(), animated: true)
     }
 }
