@@ -15,6 +15,7 @@
 		CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */; };
 		CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */; };
 		CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC7C2906C25800943927 /* BookListViewController.swift */; };
+		CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC822906C56900943927 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITests.swift; sourceTree = "<group>"; };
 		CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CBEFFC7C2906C25800943927 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		CBEFFC822906C56900943927 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		CBEFFC4B2906BDCD00943927 /* book-store-ccoli */ = {
 			isa = PBXGroup;
 			children = (
+				CBEFFC812906C56100943927 /* Extension */,
 				CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */,
 				CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */,
 				CBEFFC552906BDD000943927 /* Assets.xcassets */,
@@ -122,6 +125,14 @@
 				CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */,
 			);
 			path = "book-store-ccoliUITests";
+			sourceTree = "<group>";
+		};
+		CBEFFC812906C56100943927 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC822906C56900943927 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */,
 				CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */,
 				CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */,
+				CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
