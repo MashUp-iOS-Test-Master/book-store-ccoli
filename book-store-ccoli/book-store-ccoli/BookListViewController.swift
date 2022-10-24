@@ -6,24 +6,61 @@
 //
 
 import UIKit
+import SnapKit
 
-class BookListViewController: UIViewController {
+final class BookListViewController: UIViewController {
+    
+    let registerBookButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("가격 합계", for: .normal)
+        button.layer.cornerRadius = 8
+        button.backgroundColor = .ccoliGreen
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        return button
+    }()
+    
+    let bookListTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.separatorStyle = .none
+        return tableView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        configureView()
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureView() {
+        navigationItem.title = "book store"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        [bookListTableView, registerBookButton].forEach {
+            view.addSubview($0)
+        }
+        
+        bookListTableView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.bottom.equalTo(registerBookButton.snp.top).offset(-20)
+        }
+        
+        registerBookButton.snp.makeConstraints {
+            $0.trailing.leading.equalToSuperview().inset(20)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+            $0.height.equalToSuperview().multipliedBy(0.06)
+        }
+        
+        let registerBookGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(registerBookButtonDidTap))
+        registerBookButton.addGestureRecognizer(registerBookGestureRecognizer)
     }
-    */
+    
+    private func setupView() {
+        view.backgroundColor = .white
+    }
+    
+    @objc func registerBookButtonDidTap() {
 
+    }
 }
