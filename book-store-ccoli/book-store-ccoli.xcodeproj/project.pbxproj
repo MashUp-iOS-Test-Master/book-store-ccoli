@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */; };
+		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
+		CBEFFC512906BDCD00943927 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC502906BDCD00943927 /* ViewController.swift */; };
+		CBEFFC542906BDCD00943927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC522906BDCD00943927 /* Main.storyboard */; };
+		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
+		CBEFFC592906BDD000943927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */; };
+		CBEFFC642906BDD000943927 /* book_store_ccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */; };
+		CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */; };
+		CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBEFFC602906BDD000943927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEFFC412906BDCD00943927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEFFC482906BDCD00943927;
+			remoteInfo = "book-store-ccoli";
+		};
+		CBEFFC6A2906BDD000943927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEFFC412906BDCD00943927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEFFC482906BDCD00943927;
+			remoteInfo = "book-store-ccoli";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBEFFC492906BDCD00943927 /* book-store-ccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store-ccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBEFFC502906BDCD00943927 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBEFFC532906BDCD00943927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBEFFC552906BDD000943927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBEFFC582906BDD000943927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBEFFC5A2906BDD000943927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEFFC5F2906BDD000943927 /* book-store-ccoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-store-ccoliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliTests.swift; sourceTree = "<group>"; };
+		CBEFFC692906BDD000943927 /* book-store-ccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-store-ccoliUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITests.swift; sourceTree = "<group>"; };
+		CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBEFFC462906BDCD00943927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFFC5C2906BDD000943927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFFC662906BDD000943927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBEFFC402906BDCD00943927 = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC4B2906BDCD00943927 /* book-store-ccoli */,
+				CBEFFC622906BDD000943927 /* book-store-ccoliTests */,
+				CBEFFC6C2906BDD000943927 /* book-store-ccoliUITests */,
+				CBEFFC4A2906BDCD00943927 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBEFFC4A2906BDCD00943927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC492906BDCD00943927 /* book-store-ccoli.app */,
+				CBEFFC5F2906BDD000943927 /* book-store-ccoliTests.xctest */,
+				CBEFFC692906BDD000943927 /* book-store-ccoliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBEFFC4B2906BDCD00943927 /* book-store-ccoli */ = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */,
+				CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */,
+				CBEFFC502906BDCD00943927 /* ViewController.swift */,
+				CBEFFC522906BDCD00943927 /* Main.storyboard */,
+				CBEFFC552906BDD000943927 /* Assets.xcassets */,
+				CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */,
+				CBEFFC5A2906BDD000943927 /* Info.plist */,
+			);
+			path = "book-store-ccoli";
+			sourceTree = "<group>";
+		};
+		CBEFFC622906BDD000943927 /* book-store-ccoliTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */,
+			);
+			path = "book-store-ccoliTests";
+			sourceTree = "<group>";
+		};
+		CBEFFC6C2906BDD000943927 /* book-store-ccoliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */,
+				CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */,
+			);
+			path = "book-store-ccoliUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBEFFC482906BDCD00943927 /* book-store-ccoli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEFFC732906BDD000943927 /* Build configuration list for PBXNativeTarget "book-store-ccoli" */;
+			buildPhases = (
+				CBEFFC452906BDCD00943927 /* Sources */,
+				CBEFFC462906BDCD00943927 /* Frameworks */,
+				CBEFFC472906BDCD00943927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "book-store-ccoli";
+			productName = "book-store-ccoli";
+			productReference = CBEFFC492906BDCD00943927 /* book-store-ccoli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBEFFC5E2906BDD000943927 /* book-store-ccoliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEFFC762906BDD000943927 /* Build configuration list for PBXNativeTarget "book-store-ccoliTests" */;
+			buildPhases = (
+				CBEFFC5B2906BDD000943927 /* Sources */,
+				CBEFFC5C2906BDD000943927 /* Frameworks */,
+				CBEFFC5D2906BDD000943927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEFFC612906BDD000943927 /* PBXTargetDependency */,
+			);
+			name = "book-store-ccoliTests";
+			productName = "book-store-ccoliTests";
+			productReference = CBEFFC5F2906BDD000943927 /* book-store-ccoliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBEFFC682906BDD000943927 /* book-store-ccoliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEFFC792906BDD000943927 /* Build configuration list for PBXNativeTarget "book-store-ccoliUITests" */;
+			buildPhases = (
+				CBEFFC652906BDD000943927 /* Sources */,
+				CBEFFC662906BDD000943927 /* Frameworks */,
+				CBEFFC672906BDD000943927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEFFC6B2906BDD000943927 /* PBXTargetDependency */,
+			);
+			name = "book-store-ccoliUITests";
+			productName = "book-store-ccoliUITests";
+			productReference = CBEFFC692906BDD000943927 /* book-store-ccoliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBEFFC412906BDCD00943927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					CBEFFC482906BDCD00943927 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					CBEFFC5E2906BDD000943927 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = CBEFFC482906BDCD00943927;
+					};
+					CBEFFC682906BDD000943927 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = CBEFFC482906BDCD00943927;
+					};
+				};
+			};
+			buildConfigurationList = CBEFFC442906BDCD00943927 /* Build configuration list for PBXProject "book-store-ccoli" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBEFFC402906BDCD00943927;
+			productRefGroup = CBEFFC4A2906BDCD00943927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBEFFC482906BDCD00943927 /* book-store-ccoli */,
+				CBEFFC5E2906BDD000943927 /* book-store-ccoliTests */,
+				CBEFFC682906BDD000943927 /* book-store-ccoliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBEFFC472906BDCD00943927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEFFC592906BDD000943927 /* LaunchScreen.storyboard in Resources */,
+				CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */,
+				CBEFFC542906BDCD00943927 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFFC5D2906BDD000943927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFFC672906BDD000943927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBEFFC452906BDCD00943927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEFFC512906BDCD00943927 /* ViewController.swift in Sources */,
+				CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */,
+				CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFFC5B2906BDD000943927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEFFC642906BDD000943927 /* book_store_ccoliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEFFC652906BDD000943927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */,
+				CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBEFFC612906BDD000943927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEFFC482906BDCD00943927 /* book-store-ccoli */;
+			targetProxy = CBEFFC602906BDD000943927 /* PBXContainerItemProxy */;
+		};
+		CBEFFC6B2906BDD000943927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEFFC482906BDCD00943927 /* book-store-ccoli */;
+			targetProxy = CBEFFC6A2906BDD000943927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBEFFC522906BDCD00943927 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBEFFC532906BDCD00943927 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBEFFC582906BDD000943927 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBEFFC712906BDD000943927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBEFFC722906BDD000943927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBEFFC742906BDD000943927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MYR6MP3VKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "book-store-ccoli/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccoli.book-store-ccoli";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBEFFC752906BDD000943927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MYR6MP3VKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "book-store-ccoli/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccoli.book-store-ccoli";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBEFFC772906BDD000943927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MYR6MP3VKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccoli.book-store-ccoliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/book-store-ccoli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/book-store-ccoli";
+			};
+			name = Debug;
+		};
+		CBEFFC782906BDD000943927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MYR6MP3VKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccoli.book-store-ccoliTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/book-store-ccoli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/book-store-ccoli";
+			};
+			name = Release;
+		};
+		CBEFFC7A2906BDD000943927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MYR6MP3VKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccoli.book-store-ccoliUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "book-store-ccoli";
+			};
+			name = Debug;
+		};
+		CBEFFC7B2906BDD000943927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MYR6MP3VKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccoli.book-store-ccoliUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "book-store-ccoli";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBEFFC442906BDCD00943927 /* Build configuration list for PBXProject "book-store-ccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEFFC712906BDD000943927 /* Debug */,
+				CBEFFC722906BDD000943927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEFFC732906BDD000943927 /* Build configuration list for PBXNativeTarget "book-store-ccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEFFC742906BDD000943927 /* Debug */,
+				CBEFFC752906BDD000943927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEFFC762906BDD000943927 /* Build configuration list for PBXNativeTarget "book-store-ccoliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEFFC772906BDD000943927 /* Debug */,
+				CBEFFC782906BDD000943927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEFFC792906BDD000943927 /* Build configuration list for PBXNativeTarget "book-store-ccoliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEFFC7A2906BDD000943927 /* Debug */,
+				CBEFFC7B2906BDD000943927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBEFFC412906BDCD00943927 /* Project object */;
+}
