@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */; };
 		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
-		CBEFFC512906BDCD00943927 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC502906BDCD00943927 /* ViewController.swift */; };
-		CBEFFC542906BDCD00943927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC522906BDCD00943927 /* Main.storyboard */; };
 		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
 		CBEFFC592906BDD000943927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */; };
 		CBEFFC642906BDD000943927 /* book_store_ccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */; };
 		CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */; };
 		CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */; };
+		CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC7C2906C25800943927 /* BookListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 		CBEFFC492906BDCD00943927 /* book-store-ccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store-ccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBEFFC502906BDCD00943927 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBEFFC532906BDCD00943927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBEFFC552906BDD000943927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBEFFC582906BDD000943927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBEFFC5A2906BDD000943927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		CBEFFC692906BDD000943927 /* book-store-ccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-store-ccoliUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITests.swift; sourceTree = "<group>"; };
 		CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBEFFC7C2906C25800943927 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +99,10 @@
 			children = (
 				CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */,
 				CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */,
-				CBEFFC502906BDCD00943927 /* ViewController.swift */,
-				CBEFFC522906BDCD00943927 /* Main.storyboard */,
 				CBEFFC552906BDD000943927 /* Assets.xcassets */,
 				CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */,
 				CBEFFC5A2906BDD000943927 /* Info.plist */,
+				CBEFFC7C2906C25800943927 /* BookListViewController.swift */,
 			);
 			path = "book-store-ccoli";
 			sourceTree = "<group>";
@@ -233,7 +230,6 @@
 			files = (
 				CBEFFC592906BDD000943927 /* LaunchScreen.storyboard in Resources */,
 				CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */,
-				CBEFFC542906BDCD00943927 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEFFC512906BDCD00943927 /* ViewController.swift in Sources */,
 				CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */,
 				CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */,
+				CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBEFFC522906BDCD00943927 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBEFFC532906BDCD00943927 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
