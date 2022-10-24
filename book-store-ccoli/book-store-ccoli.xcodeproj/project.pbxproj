@@ -15,6 +15,7 @@
 		CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */; };
 		CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */; };
 		CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC7C2906C25800943927 /* BookListViewController.swift */; };
+		CBEFFC802906C33D00943927 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CBEFFC7F2906C33D00943927 /* SnapKit */; };
 		CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC822906C56900943927 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEFFC802906C33D00943927 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = "book-store-ccoli";
+			packageProductDependencies = (
+				CBEFFC7F2906C33D00943927 /* SnapKit */,
+			);
 			productName = "book-store-ccoli";
 			productReference = CBEFFC492906BDCD00943927 /* book-store-ccoli.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = CBEFFC402906BDCD00943927;
+			packageReferences = (
+				CBEFFC7E2906C33D00943927 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CBEFFC4A2906BDCD00943927 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBEFFC7E2906C33D00943927 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBEFFC7F2906C33D00943927 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBEFFC7E2906C33D00943927 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBEFFC412906BDCD00943927 /* Project object */;
 }
