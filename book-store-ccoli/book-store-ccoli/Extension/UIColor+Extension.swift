@@ -11,4 +11,8 @@ extension UIColor {
     static var ccoliGreen: UIColor {
         return UIColor(named: "ccoliGreen") ?? .green
     }
+    
+    static var ccoliGray: UIColor {
+        return UIColor(named: "ccoliGray") ?? .gray
+    }
 }
