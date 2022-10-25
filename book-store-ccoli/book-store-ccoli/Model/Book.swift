@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Book {
+struct Book: Codable {
     var title: String = ""
-    var category: Category = .novel
+    var category: Int = 0
     var publicationDate: Date = Date()
     var price: Int = 0
 }

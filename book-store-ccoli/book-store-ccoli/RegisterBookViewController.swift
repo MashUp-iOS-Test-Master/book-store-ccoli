@@ -174,7 +174,7 @@ final class RegisterBookViewController: UIViewController {
     }
     
     @objc func categorySegmentedControlDidChange(_ sender: UISegmentedControl) {
-        currentBook.category = Category(rawValue: sender.selectedSegmentIndex) ?? .novel
+        currentBook.category = sender.selectedSegmentIndex
     }
     
     @objc func datePickerValueDidChange(_ sender: UIDatePicker) {
