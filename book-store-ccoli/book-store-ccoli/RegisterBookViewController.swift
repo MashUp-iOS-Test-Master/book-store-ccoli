@@ -142,6 +142,8 @@ final class RegisterBookViewController: UIViewController {
         titleTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         priceTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         
+        publicationDateTextField.delegate = self
+        
         let backgroundTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundDidTap))
         view.addGestureRecognizer(backgroundTapGestureRecognizer)
         
@@ -187,5 +189,14 @@ final class RegisterBookViewController: UIViewController {
     
     @objc func backgroundDidTap() {
         view.endEditing(true)
+    }
+}
+
+extension RegisterBookViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == publicationDateTextField {
+            guard let datePickerView = publicationDateTextField.inputView as? UIDatePicker else { return }
+            publicationDateTextField.text = datePickerView.date.dateToString()
+        }
     }
 }
