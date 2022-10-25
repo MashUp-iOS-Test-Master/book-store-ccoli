@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB0E9F142906CBA100F28050 /* RegisterBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */; };
+		CB0E9F1929081A8C00F28050 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1829081A8C00F28050 /* Category.swift */; };
 		CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */; };
 		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
 		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBookViewController.swift; sourceTree = "<group>"; };
+		CB0E9F1829081A8C00F28050 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		CBEFFC492906BDCD00943927 /* book-store-ccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store-ccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0E9F1729081A8600F28050 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				CB0E9F1829081A8C00F28050 /* Category.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		CBEFFC402906BDCD00943927 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		CBEFFC4B2906BDCD00943927 /* book-store-ccoli */ = {
 			isa = PBXGroup;
 			children = (
+				CB0E9F1729081A8600F28050 /* Enum */,
 				CBEFFC812906C56100943927 /* Extension */,
 				CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */,
 				CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */,
@@ -281,6 +292,7 @@
 				CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */,
 				CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */,
 				CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */,
+				CB0E9F1929081A8C00F28050 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
