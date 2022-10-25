@@ -139,6 +139,8 @@ final class RegisterBookViewController: UIViewController {
         
         categorySegmentedControl.addTarget(self, action: #selector(categorySegmentedControlDidChange(_:)), for: .valueChanged)
         registerBookButton.addTarget(self, action: #selector(registerButtonDidTap), for: .touchUpInside)
+        titleTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        priceTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         
         let backgroundTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundDidTap))
         view.addGestureRecognizer(backgroundTapGestureRecognizer)
@@ -161,16 +163,21 @@ final class RegisterBookViewController: UIViewController {
         publicationDateTextField.inputView = datePicker
     }
     
-    @objc func categorySegmentedControlDidChange(_ sender: UISegmentedControl) {
-        debugPrint("segment did change!")
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if textField == titleTextField {
+            currentBook.title = textField.text ?? ""
+        } else {
+            currentBook.price = Int(textField.text ?? "0") ?? 0
+        }
     }
     
-    @objc func datePickerDoneButtonDidTap() {
-        publicationDateTextField.resignFirstResponder()
+    @objc func categorySegmentedControlDidChange(_ sender: UISegmentedControl) {
+        currentBook.category = Category(rawValue: sender.selectedSegmentIndex) ?? .novel
     }
     
     @objc func datePickerValueDidChange(_ sender: UIDatePicker) {
-        debugPrint("date did Change")
+        currentBook.publicationDate = sender.date
+        publicationDateTextField.text = sender.date.dateToString()
     }
     
     @objc func registerButtonDidTap() {
@@ -180,9 +187,5 @@ final class RegisterBookViewController: UIViewController {
     
     @objc func backgroundDidTap() {
         view.endEditing(true)
-    }
-    
-    @objc func tapCancel() {
-        publicationDateTextField.resignFirstResponder()
     }
 }
