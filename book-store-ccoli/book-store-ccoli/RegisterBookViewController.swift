@@ -16,11 +16,7 @@ final class RegisterBookViewController: UIViewController {
         return label
     }()
     
-    let titleTextField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "enter book title"
-        return textField
-    }()
+    let titleTextField = UITextField()
     
     let categoryLabel: UILabel = {
         let label = UILabel()
@@ -47,11 +43,7 @@ final class RegisterBookViewController: UIViewController {
         return label
     }()
     
-    let publicationDateTextField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "enter publication date"
-        return textField
-    }()
+    let publicationDateTextField = UITextField()
     
     let priceLabel: UILabel = {
         let label = UILabel()
@@ -148,15 +140,35 @@ final class RegisterBookViewController: UIViewController {
         
         let backgroundTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(backgroundDidTap))
         view.addGestureRecognizer(backgroundTapGestureRecognizer)
+        
+        setDatePicker()
     }
     
     private func setupView() {
         view.backgroundColor = .white
-        
+        publicationDateTextField.placeholder = "enter publication date"
+        titleTextField.placeholder = "enter book title"
+    }
+    
+    private func setDatePicker() {
+        let datePicker = UIDatePicker()
+        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.datePickerMode = .date
+        datePicker.locale = Locale(identifier: "ko-KR")
+        datePicker.addTarget(self, action: #selector(datePickerValueDidChange(_:)), for: .valueChanged)
+        publicationDateTextField.inputView = datePicker
     }
     
     @objc func categorySegmentedControlDidChange(_ sender: UISegmentedControl) {
-        
+        debugPrint("segment did change!")
+    }
+    
+    @objc func datePickerDoneButtonDidTap() {
+        publicationDateTextField.resignFirstResponder()
+    }
+    
+    @objc func datePickerValueDidChange(_ sender: UIDatePicker) {
+        debugPrint("date did Change")
     }
     
     @objc func registerButtonDidTap() {
@@ -166,5 +178,9 @@ final class RegisterBookViewController: UIViewController {
     
     @objc func backgroundDidTap() {
         view.endEditing(true)
+    }
+    
+    @objc func tapCancel() {
+        publicationDateTextField.resignFirstResponder()
     }
 }
