@@ -67,6 +67,8 @@ final class RegisterBookViewController: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         return button
     }()
+    
+    var currentBook = Book()
 
     override func viewDidLoad() {
         super.viewDidLoad()
