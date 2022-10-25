@@ -69,12 +69,15 @@ final class RegisterBookViewController: UIViewController {
     }()
     
     var currentBook = Book()
+    var registeredBookList: [Book] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureView()
         setupView()
+        // TODO: 나중에는 처음에 가지고 있던 리스트를 여기에 넘겨주는걸로!
+        loadRegisteredBookList()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -165,6 +168,22 @@ final class RegisterBookViewController: UIViewController {
         publicationDateTextField.inputView = datePicker
     }
     
+    private func saveCurrentBook() {
+        registeredBookList.append(currentBook)
+        
+        if let encodedBookList = try? JSONEncoder().encode(registeredBookList) {
+            UserDefaults.standard.set(encodedBookList, forKey: UserDefaults.bookListKey)
+        }
+    }
+    
+    private func loadRegisteredBookList() {
+        if let loadedBookListData = UserDefaults.standard.object(forKey: UserDefaults.bookListKey) as? Data {
+            if let registeredBookList = try? JSONDecoder().decode([Book].self, from: loadedBookListData) {
+                self.registeredBookList = registeredBookList
+            }
+        }
+    }
+    
     @objc func textFieldDidChange(_ textField: UITextField) {
         if textField == titleTextField {
             currentBook.title = textField.text ?? ""
@@ -183,7 +202,7 @@ final class RegisterBookViewController: UIViewController {
     }
     
     @objc func registerButtonDidTap() {
-        // TODO: 저장 로직 구현
+        saveCurrentBook()
         navigationController?.popViewController(animated: true)
     }
     
