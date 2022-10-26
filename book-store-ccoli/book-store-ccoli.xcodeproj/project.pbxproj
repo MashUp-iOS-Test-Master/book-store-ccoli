@@ -12,6 +12,7 @@
 		CB0E9F1C29081AAF00F28050 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1B29081AAF00F28050 /* Book.swift */; };
 		CB0E9F1E29081F1400F28050 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1D29081F1400F28050 /* Date+Extension.swift */; };
 		CB0E9F202908251F00F28050 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1F2908251F00F28050 /* UserDefaults+Extension.swift */; };
+		CB0E9F242908286A00F28050 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F232908286A00F28050 /* BookListTableViewCell.swift */; };
 		CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */; };
 		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
 		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		CB0E9F1B29081AAF00F28050 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CB0E9F1D29081F1400F28050 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CB0E9F1F2908251F00F28050 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		CB0E9F232908286A00F28050 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
 		CBEFFC492906BDCD00943927 /* book-store-ccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store-ccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CB0E9F212908282B00F28050 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBEFFC7C2906C25800943927 /* BookListViewController.swift */,
+				CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB0E9F222908283600F28050 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB0E9F232908286A00F28050 /* BookListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CBEFFC402906BDCD00943927 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +146,8 @@
 		CBEFFC4B2906BDCD00943927 /* book-store-ccoli */ = {
 			isa = PBXGroup;
 			children = (
+				CB0E9F222908283600F28050 /* View */,
+				CB0E9F212908282B00F28050 /* Controller */,
 				CB0E9F1A29081AA900F28050 /* Model */,
 				CB0E9F1729081A8600F28050 /* Enum */,
 				CBEFFC812906C56100943927 /* Extension */,
@@ -135,8 +156,6 @@
 				CBEFFC552906BDD000943927 /* Assets.xcassets */,
 				CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */,
 				CBEFFC5A2906BDD000943927 /* Info.plist */,
-				CBEFFC7C2906C25800943927 /* BookListViewController.swift */,
-				CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */,
 			);
 			path = "book-store-ccoli";
 			sourceTree = "<group>";
@@ -312,6 +331,7 @@
 				CB0E9F1E29081F1400F28050 /* Date+Extension.swift in Sources */,
 				CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */,
 				CB0E9F202908251F00F28050 /* UserDefaults+Extension.swift in Sources */,
+				CB0E9F242908286A00F28050 /* BookListTableViewCell.swift in Sources */,
 				CB0E9F1929081A8C00F28050 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

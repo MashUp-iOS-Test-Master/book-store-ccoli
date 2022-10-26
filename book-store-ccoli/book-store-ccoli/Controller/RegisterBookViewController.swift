@@ -6,7 +6,9 @@
 //
 
 import UIKit
-
+// 미래의 TODO
+// TODO: 추후 키보드 toolbar에 Done 버튼 추가
+// TODO: 금액에 쉼표 추가
 final class RegisterBookViewController: UIViewController {
     
     let titleLabel: UILabel = {
