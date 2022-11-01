@@ -11,6 +11,13 @@ import SnapKit
 
 final class BookListViewController: UIViewController {
     
+    let indicatorView: UIActivityIndicatorView = {
+        let indicatorView = UIActivityIndicatorView()
+        indicatorView.backgroundColor = UIColor.ccoliGray
+        indicatorView.hidesWhenStopped = true
+        return indicatorView
+    }()
+    
     let registerBookButton: UIButton = {
         let button = UIButton()
         button.setTitle("register", for: .normal)
@@ -47,7 +54,7 @@ final class BookListViewController: UIViewController {
         navigationItem.title = "book store"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        [bookListTableView, registerBookButton, totalPriceLabel].forEach {
+        [bookListTableView, registerBookButton, totalPriceLabel, indicatorView].forEach {
             view.addSubview($0)
         }
         
@@ -66,6 +73,10 @@ final class BookListViewController: UIViewController {
             $0.trailing.leading.equalToSuperview().inset(20)
             $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
             $0.height.equalToSuperview().multipliedBy(0.06)
+        }
+        
+        indicatorView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
         }
         
         let registerBookGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(registerBookButtonDidTap))
@@ -90,7 +101,16 @@ final class BookListViewController: UIViewController {
         if let loadedBookListData = UserDefaults.standard.object(forKey: UserDefaults.bookListKey) as? Data {
             if let registeredBookList = try? JSONDecoder().decode([Book].self, from: loadedBookListData) {
                 self.registeredBookList = registeredBookList
+                updateBookList()
             }
+        }
+    }
+    
+    private func updateBookList() {
+        indicatorView.startAnimating()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
+            self?.bookListTableView.reloadData()
+            self?.indicatorView.stopAnimating()
         }
     }
     
@@ -160,6 +180,6 @@ extension BookListViewController: UITableViewDataSource {
 extension BookListViewController: Loadable {
     func updateBookList(_ bookList: [Book]) {
         registeredBookList = bookList
-        bookListTableView.reloadData()
+        updateBookList()
     }
 }
