@@ -6,7 +6,9 @@
 //
 
 import UIKit
+
 import SnapKit
+
 final class BookListViewController: UIViewController {
     
     let registerBookButton: UIButton = {
@@ -21,6 +23,7 @@ final class BookListViewController: UIViewController {
     let bookListTableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
         return tableView
     }()
     
@@ -97,7 +100,32 @@ final class BookListViewController: UIViewController {
 }
 
 extension BookListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let currentCategory = Category(rawValue: registeredBookList[indexPath.row].category) ?? .novel
+        
+        switch currentCategory {
+        case .novel:
+            UIDevice.vibrate()
+        case .tech:
+            view.backgroundColor = .red
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+                self?.view.backgroundColor = .systemBackground
+            }
+        case .economy:
+            break
+        case .poet:
+            let alertController = UIAlertController(
+                title: nil,
+                message: "으악! 🧟",
+                preferredStyle: .alert
+            )
+            present(alertController, animated: true)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.dismiss(animated: true)
+            }
+        }
+    }
 }
 
 extension BookListViewController: UITableViewDataSource {

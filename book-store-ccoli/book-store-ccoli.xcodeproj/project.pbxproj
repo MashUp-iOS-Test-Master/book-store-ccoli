@@ -13,6 +13,7 @@
 		CB0E9F1E29081F1400F28050 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1D29081F1400F28050 /* Date+Extension.swift */; };
 		CB0E9F202908251F00F28050 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1F2908251F00F28050 /* UserDefaults+Extension.swift */; };
 		CB0E9F242908286A00F28050 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F232908286A00F28050 /* BookListTableViewCell.swift */; };
+		CB40123629113BB600F1BCA3 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40123529113BB600F1BCA3 /* UIDevice+Extension.swift */; };
 		CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */; };
 		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
 		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		CB0E9F1D29081F1400F28050 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CB0E9F1F2908251F00F28050 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		CB0E9F232908286A00F28050 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		CB40123529113BB600F1BCA3 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		CBEFFC492906BDCD00943927 /* book-store-ccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-store-ccoli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFFC4C2906BDCD00943927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				CBEFFC822906C56900943927 /* UIColor+Extension.swift */,
 				CB0E9F1D29081F1400F28050 /* Date+Extension.swift */,
 				CB0E9F1F2908251F00F28050 /* UserDefaults+Extension.swift */,
+				CB40123529113BB600F1BCA3 /* UIDevice+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				CBEFFC4D2906BDCD00943927 /* AppDelegate.swift in Sources */,
 				CB0E9F142906CBA100F28050 /* RegisterBookViewController.swift in Sources */,
 				CB0E9F1C29081AAF00F28050 /* Book.swift in Sources */,
+				CB40123629113BB600F1BCA3 /* UIDevice+Extension.swift in Sources */,
 				CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */,
 				CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */,
 				CB0E9F1E29081F1400F28050 /* Date+Extension.swift in Sources */,

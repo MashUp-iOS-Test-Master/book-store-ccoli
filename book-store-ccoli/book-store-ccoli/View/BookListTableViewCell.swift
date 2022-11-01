@@ -43,12 +43,6 @@ class BookListTableViewCell: UITableViewCell {
         
         configureView()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     private func configureView() {
         addSubview(bookInfoStackView)
@@ -61,6 +55,9 @@ class BookListTableViewCell: UITableViewCell {
             $0.edges.equalToSuperview()
             $0.height.equalTo(40)
         }
+        
+        selectionStyle = .none
+        backgroundColor = .clear
     }
     
     func updateCell(_ book: Book) {
