@@ -7,8 +7,6 @@
 
 import UIKit
 import SnapKit
-// TODO: tableView Cell 디자인
-// TODO: 가격 합계 label 따로 만들기
 final class BookListViewController: UIViewController {
     
     let registerBookButton: UIButton = {
@@ -26,13 +24,13 @@ final class BookListViewController: UIViewController {
         return tableView
     }()
     
-    var registeredBookList: [Book] = []
-//    {
-//        didSet {
-//            debugPrint(registeredBookList)
-//            bookListTableView.reloadData()
-//        }
-//    }
+    var registeredBookList: [Book] = [] {
+        didSet {
+            updateTotalPrice()
+        }
+    }
+
+    let totalPriceLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,12 +44,17 @@ final class BookListViewController: UIViewController {
         navigationItem.title = "book store"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        [bookListTableView, registerBookButton].forEach {
+        [bookListTableView, registerBookButton, totalPriceLabel].forEach {
             view.addSubview($0)
         }
         
         bookListTableView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.leading.trailing.equalToSuperview().inset(20)
+        }
+        
+        totalPriceLabel.snp.makeConstraints {
+            $0.top.equalTo(bookListTableView.snp.bottom).offset(20)
             $0.leading.trailing.equalToSuperview().inset(20)
             $0.bottom.equalTo(registerBookButton.snp.top).offset(-20)
         }
@@ -73,6 +76,11 @@ final class BookListViewController: UIViewController {
     
     private func setupView() {
         view.backgroundColor = .white
+    }
+    
+    private func updateTotalPrice() {
+        let totalPrice = registeredBookList.map { $0.price }.reduce(0, +)
+        totalPriceLabel.text = "총 합계: \(totalPrice)원"
     }
     
     private func loadRegisteredBookList() {
