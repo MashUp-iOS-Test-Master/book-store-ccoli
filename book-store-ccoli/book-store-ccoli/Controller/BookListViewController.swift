@@ -95,7 +95,9 @@ final class BookListViewController: UIViewController {
     }
     
     @objc func registerBookButtonDidTap() {
-        navigationController?.pushViewController(RegisterBookViewController(), animated: true)
+        let registerBookViewController = RegisterBookViewController()
+        registerBookViewController.delegate = self
+        navigationController?.pushViewController(registerBookViewController, animated: true)
     }
 }
 
@@ -152,5 +154,12 @@ extension BookListViewController: UITableViewDataSource {
             registeredBookList.remove(at: indexPath.row)
             bookListTableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+}
+
+extension BookListViewController: Loadable {
+    func updateBookList(_ bookList: [Book]) {
+        registeredBookList = bookList
+        bookListTableView.reloadData()
     }
 }

@@ -9,6 +9,11 @@ import UIKit
 // 미래의 TODO
 // TODO: 추후 키보드 toolbar에 Done 버튼 추가
 // TODO: 금액에 쉼표 추가
+
+protocol Loadable: AnyObject {
+    func updateBookList(_ bookList: [Book])
+}
+
 final class RegisterBookViewController: UIViewController {
     
     let titleLabel: UILabel = {
@@ -72,6 +77,7 @@ final class RegisterBookViewController: UIViewController {
     
     var currentBook = Book()
     var registeredBookList: [Book] = []
+    weak var delegate: Loadable?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -205,6 +211,7 @@ final class RegisterBookViewController: UIViewController {
     
     @objc func registerButtonDidTap() {
         saveCurrentBook()
+        delegate?.updateBookList(registeredBookList)
         navigationController?.popViewController(animated: true)
     }
     
