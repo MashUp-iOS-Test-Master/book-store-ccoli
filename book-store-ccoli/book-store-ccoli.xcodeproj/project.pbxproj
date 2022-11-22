@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6807C621292C566D001AF33E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6807C620292C566D001AF33E /* SnapKit */; };
+		6807C626292C5A26001AF33E /* RegisterBookViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807C625292C5A26001AF33E /* RegisterBookViewControllerTests.swift */; };
+		6807C628292C5A91001AF33E /* BookListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807C627292C5A91001AF33E /* BookListViewControllerTests.swift */; };
+		6807C62A292C5AD8001AF33E /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807C629292C5AD8001AF33E /* AppModelTests.swift */; };
 		CB0E9F142906CBA100F28050 /* RegisterBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */; };
 		CB0E9F1929081A8C00F28050 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1829081A8C00F28050 /* Category.swift */; };
 		CB0E9F1C29081AAF00F28050 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E9F1B29081AAF00F28050 /* Book.swift */; };
@@ -19,9 +22,6 @@
 		CBEFFC4F2906BDCD00943927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC4E2906BDCD00943927 /* SceneDelegate.swift */; };
 		CBEFFC562906BDD000943927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC552906BDD000943927 /* Assets.xcassets */; };
 		CBEFFC592906BDD000943927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEFFC572906BDD000943927 /* LaunchScreen.storyboard */; };
-		CBEFFC642906BDD000943927 /* book_store_ccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */; };
-		CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */; };
-		CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */; };
 		CBEFFC7D2906C25800943927 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC7C2906C25800943927 /* BookListViewController.swift */; };
 		CBEFFC832906C56900943927 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFFC822906C56900943927 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6807C625292C5A26001AF33E /* RegisterBookViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBookViewControllerTests.swift; sourceTree = "<group>"; };
+		6807C627292C5A91001AF33E /* BookListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewControllerTests.swift; sourceTree = "<group>"; };
+		6807C629292C5AD8001AF33E /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
 		CB0E9F132906CBA100F28050 /* RegisterBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBookViewController.swift; sourceTree = "<group>"; };
 		CB0E9F1829081A8C00F28050 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		CB0E9F1B29081AAF00F28050 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -58,10 +61,7 @@
 		CBEFFC582906BDD000943927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBEFFC5A2906BDD000943927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBEFFC5F2906BDD000943927 /* book-store-ccoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-store-ccoliTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliTests.swift; sourceTree = "<group>"; };
 		CBEFFC692906BDD000943927 /* book-store-ccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book-store-ccoliUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITests.swift; sourceTree = "<group>"; };
-		CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_store_ccoliUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CBEFFC7C2906C25800943927 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		CBEFFC822906C56900943927 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6807C622292C59EB001AF33E /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				6807C624292C5A00001AF33E /* UI Layer */,
+				6807C623292C59FB001AF33E /* App Model */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		6807C623292C59FB001AF33E /* App Model */ = {
+			isa = PBXGroup;
+			children = (
+				6807C629292C5AD8001AF33E /* AppModelTests.swift */,
+			);
+			path = "App Model";
+			sourceTree = "<group>";
+		};
+		6807C624292C5A00001AF33E /* UI Layer */ = {
+			isa = PBXGroup;
+			children = (
+				6807C625292C5A26001AF33E /* RegisterBookViewControllerTests.swift */,
+				6807C627292C5A91001AF33E /* BookListViewControllerTests.swift */,
+			);
+			path = "UI Layer";
+			sourceTree = "<group>";
+		};
 		CB0E9F1729081A8600F28050 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +156,6 @@
 			children = (
 				CBEFFC4B2906BDCD00943927 /* book-store-ccoli */,
 				CBEFFC622906BDD000943927 /* book-store-ccoliTests */,
-				CBEFFC6C2906BDD000943927 /* book-store-ccoliUITests */,
 				CBEFFC4A2906BDCD00943927 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,18 +190,9 @@
 		CBEFFC622906BDD000943927 /* book-store-ccoliTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBEFFC632906BDD000943927 /* book_store_ccoliTests.swift */,
+				6807C622292C59EB001AF33E /* Cases */,
 			);
 			path = "book-store-ccoliTests";
-			sourceTree = "<group>";
-		};
-		CBEFFC6C2906BDD000943927 /* book-store-ccoliUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CBEFFC6D2906BDD000943927 /* book_store_ccoliUITests.swift */,
-				CBEFFC6F2906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift */,
-			);
-			path = "book-store-ccoliUITests";
 			sourceTree = "<group>";
 		};
 		CBEFFC812906C56100943927 /* Extension */ = {
@@ -344,7 +360,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEFFC642906BDD000943927 /* book_store_ccoliTests.swift in Sources */,
+				6807C626292C5A26001AF33E /* RegisterBookViewControllerTests.swift in Sources */,
+				6807C628292C5A91001AF33E /* BookListViewControllerTests.swift in Sources */,
+				6807C62A292C5AD8001AF33E /* AppModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +370,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEFFC702906BDD000943927 /* book_store_ccoliUITestsLaunchTests.swift in Sources */,
-				CBEFFC6E2906BDD000943927 /* book_store_ccoliUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
