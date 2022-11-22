@@ -173,6 +173,10 @@ extension BookListViewController: UITableViewDataSource {
         if editingStyle == .delete {
             registeredBookList.remove(at: indexPath.row)
             bookListTableView.deleteRows(at: [indexPath], with: .fade)
+            
+            if let encodedBookList = try? JSONEncoder().encode(registeredBookList) {
+                UserDefaults.standard.set(encodedBookList, forKey: UserDefaults.bookListKey)
+            }
         }
     }
 }
