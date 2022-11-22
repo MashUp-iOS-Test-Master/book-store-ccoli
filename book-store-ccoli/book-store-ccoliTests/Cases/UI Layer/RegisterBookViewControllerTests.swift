@@ -1,14 +1,13 @@
 //
-//  book_store_ccoliTests.swift
+//  RegisterBookViewControllerTests.swift
 //  book-store-ccoliTests
 //
-//  Created by 최혜린 on 2022/10/24.
+//  Created by 최혜린 on 2022/11/22.
 //
 
 import XCTest
-@testable import book_store_ccoli
 
-final class book_store_ccoliTests: XCTestCase {
+final class RegisterBookViewControllerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
